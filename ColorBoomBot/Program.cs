@@ -1109,7 +1109,7 @@ by MirTrudMay®";
                                                 if (stopwatch.Elapsed.TotalSeconds > 60)
                                                 {
                                                     Bot.DeleteMessageAsync(message.Chat, message.MessageId);
-                                                    await Bot.SendTextMessageAsync(e.Message.Chat, "Упс, что-то пошло не так😕 Попробуйте другую фотку.");
+                                                    await Bot.SendTextMessageAsync(e.Message.Chat, "Упс, что-то пошло не так😕\nПопробуйте другую фотку.");
                                                     return;
                                                 }
                                                 driver.Navigate().GoToUrl("https://www.matrix.com/virtual-hair-color-try-on");
